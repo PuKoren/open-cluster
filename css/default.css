@@ -62,9 +62,18 @@ a{
 }
 
 .menu .menuItems ul li{
-	width: 120px;
+	width: 205px;
 	float: left;
-	padding-right: 50px;
+}
+
+.menu .menuItems ul li:first-child{
+	width:100px;
+	text-align: left;
+}
+
+.menu .menuItems ul li:last-child{
+	width:100px;
+	text-align: right;
 }
 
 .menu .menuItems .connect{
