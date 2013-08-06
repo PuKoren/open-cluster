@@ -76,12 +76,42 @@ a{
 	text-align: right;
 }
 
+.menu .menuItems a{
+	transition: 500ms linear 0s;
+}
+
+.menu .menuItems a:hover{
+	color: #349bd1;
+	text-shadow: none;
+	transition: 500ms linear 0s;
+	outline: 0 none;
+	text-shadow: -1px 1px 8px #349bd1, 1px -1px 8px #349bd1;
+}
+
 .menu .menuItems .connect{
 	color: #ce3352;
+	transition: 500ms linear 0s;
+}
+
+.menu .menuItems .connect:hover{
+	color: #ff476c;
+	text-shadow: none;
+	transition: 500ms linear 0s;
+	outline: 0 none;
+	text-shadow: -1px 1px 8px #ff476c, 1px -1px 8px #ff476c;
 }
 
 .menu .menuItems .selected{
+	transition: 500ms linear 0s;
 	color: #349bd1;
+}
+
+.menu .menuItems .selected:hover{
+	color: #3fbfff;
+	text-shadow: none;
+	transition: 500ms linear 0s;
+	outline: 0 none;
+	text-shadow: -1px 1px 8px #3fbfff, 1px -1px 8px #3fbfff;
 }
 
 .footer{
