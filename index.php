@@ -5,6 +5,7 @@
 		<link rel="stylesheet" type="text/css" href="css/reset-min.css"></link>
 		<link rel="stylesheet" type="text/css" href="css/default.css"></link>
 		<script type="text/javascript" src="http://codeorigin.jquery.com/jquery-2.0.3.min.js"></script>
+		<script type="text/javascript" src="js/jquery.fittext.js"></script>
 	</head>
 	<body>
 		<div class="menu">
@@ -20,7 +21,7 @@
 						<a class="" href="">How to Play</a>
 					</li>
 					<li>
-						<a class="" href="">Leaderboard</a>
+						<a class="" href="">Leader Board</a>
 					</li>
 					<li>
 						<a class="" href="">Forums</a>

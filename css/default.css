@@ -62,17 +62,16 @@ a{
 }
 
 .menu .menuItems ul li{
-	width: 205px;
+	width: 16.66%;
+	display:block;
 	float: left;
 }
 
 .menu .menuItems ul li:first-child{
-	width:100px;
 	text-align: left;
 }
 
 .menu .menuItems ul li:last-child{
-	width:100px;
 	text-align: right;
 }
 
@@ -139,8 +138,6 @@ a{
 .container{
 	background-color: #eaeaea;
 
-	min-height: 400px;
-
 	border: 6px solid rgba(234,234,234,0.2);
 	background-clip: padding-box;
 }
@@ -148,6 +145,7 @@ a{
 .container .header{
 	box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.7);
 	display:block;
+	width:100%;
 }
 
 .container .content {
