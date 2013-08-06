@@ -58,24 +58,17 @@ a{
 
 .menu .menuItems ul{
 	list-style-type:none;
+	padding-top: 45px;
 }
 
 .menu .menuItems ul li{
 	width: 120px;
 	float: left;
 	padding-right: 50px;
-	padding-bottom: 20px;
 }
 
-.menu .menuItems a{
-	display: block;
-	width: 100%;
-	height: 100%;
-	padding-top: 40px;
-}
-
-.menu .menuItems a .connect{
-	background-color: #26728A;
+.menu .menuItems .connect{
+	color: #ce3352;
 }
 
 .menu .menuItems .selected{
@@ -83,8 +76,9 @@ a{
 }
 
 .footer{
+	font-size:12px;
 	text-align: center;
-	color:#444;
+	color:#333;
 	background: rgba(0,0,0,0.3);
 	padding-top:5px;
 	height:20px;
