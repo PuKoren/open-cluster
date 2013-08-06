@@ -13,7 +13,7 @@ function updateTime(){
 
 function fitTextInit(){
 	$(".title").fitText(1.1, {minFontSize: '20px', maxFontSize: '50px'});
-}
+};
 
 $(document).ready( function() {
 	fitTextInit();
