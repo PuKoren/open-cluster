@@ -1,6 +1,6 @@
-<img class="header" src="resources/img/planet.png"></img>
+<img class="header" src="<?php echo site_url();?>/resources/img/planet.png"></img>
 <div class="content">
-	<img class="right" src="resources/img/spaceship.jpg"/>
+	<img class="right" src="<?php echo site_url();?>/resources/img/spaceship.jpg"/>
 	<h1>I can do that</h1>
 
 	<p>
