@@ -57,14 +57,14 @@ a{
 }
 
 .menu .menuItems ul{
+	display: table;
 	list-style-type:none;
+	width:100%;
 	padding-top: 45px;
 }
 
 .menu .menuItems ul li{
-	min-width: 14.28%;
-	display:block;
-	float: left;
+	display: table-cell;
 }
 
 .menu .menuItems ul li:first-child{
@@ -169,4 +169,28 @@ a{
 .container .content img{
 	margin-left: 25px;
 	border: 1px solid #BBB;
+}
+
+.thumbContainer{
+	display: table;
+	width: 100%;
+}
+
+.thumbContainer .thumb{
+	display: table-cell;
+	margin: auto;
+	max-width: 100px;
+	text-align: center;
+	padding-bottom: 25px;
+}
+
+.thumbContainer .thumb img{
+	max-width: 250px;
+	max-height: 150px;
+	margin: 10px 0px 10px 0px;
+}
+
+.thumbContainer .thumb p{
+	margin:0px 25px 0px 25px;
+	text-align: justify;
 }

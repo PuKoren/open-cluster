@@ -1,6 +1,6 @@
-<img class="header" src="<?php echo site_url();?>/resources/img/planet.png"></img>
+<img class="header" src="<?php echo site_url('resources/img/planet.png');?>"></img>
 <div class="content">
-	<img class="right" src="<?php echo site_url();?>/resources/img/spaceship.jpg"/>
+	<img class="right" src="<?php echo site_url('resources/img/spaceship.jpg');?>"/>
 	<h1>I can do that</h1>
 
 	<p>
@@ -25,4 +25,30 @@
 		oo. Hey, look at me when I'm talking to you, motherfucker. You listen: we go in there, and that 
 		nigga Winston or anybody else is in there, you the first motherfucker to get shot. You understand? 
 	</p>
+	<div class="thumbContainer">
+		<div class="thumb">
+			<h1 class="textCenter">Truly Free</h1>
+			<img src="http://placehold.it/250x150"/>
+			<p>
+				My money's in that office, right? If she start giving me some bullshit about it ain't there, 
+				and we got to go someplace else and get it, I'm gonna shoot you in the head then and there.
+			</p>
+		</div>
+		<div class="thumb">
+			<h1 class="textCenter">4X Game</h1>
+			<img src="http://placehold.it/250x150"/>
+			<p>
+				My money's in that office, right? If she start giving me some bullshit about it ain't there, 
+				and we got to go someplace else and get it, I'm gonna shoot you in the head then and there.
+			</p>
+		</div>
+		<div class="thumb">
+			<h1 class="textCenter">MMORPG</h1>
+			<img src="http://placehold.it/250x150"/>
+			<p>
+				My money's in that office, right? If she start giving me some bullshit about it ain't there, 
+				and we got to go someplace else and get it, I'm gonna shoot you in the head then and there.
+			</p>
+		</div>
+	</div>
 </div>
