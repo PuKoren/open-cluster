@@ -1,16 +1,18 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
 class Play extends CI_Controller {
+
+	private $data = Array('selected' => 'game');
+
 	public function __construct()
-       {
-            parent::__construct();
-            // Your own constructor code
-       }
+	{
+	    parent::__construct();
+	}
+
 	public function index($page = 'dashboard')
 	{
-		$data['title'] = ucfirst($page);
-		$data['selected'] = 'game';
-		$this->load->view('templates/header', $data);
+		$this->data['title'] = ucfirst($page);
+		$this->load->view('templates/header', $this->data);
 		$this->load->view('game/'.$page);
 		$this->load->view('templates/footer');
 	}

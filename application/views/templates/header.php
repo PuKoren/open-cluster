@@ -14,10 +14,10 @@
 			<ul>
 				<li><a href="<?php echo site_url();?>">This is a Game</a></li>
 				<li><a class="<?php echo ($selected == 'home')?'selected':''; ?>" href="<?php echo site_url();?>">Home</a></li>
-				<li><a class="<?php echo ($selected == 'game')?'selected':''; ?>" href="<?php echo site_url('play');?>">Game</a></li>
-				<li><a class="" href="">How to Play</a></li>
-				<li><a class="" href="">Leader Board</a></li>
-				<li><a class="" href="">Forums</a></li>
+				<li><a class="<?php echo ($selected == 'game')?'selected':''; ?>" href="<?php echo site_url('play');?>">Commander</a></li>
+				<li><a class="<?php echo ($selected == 'tutorial')?'selected':''; ?>" href="<?php echo site_url('pages/tutorial');?>">How to play</a></li>
+				<li><a class="<?php echo ($selected == 'leaderboard')?'selected':''; ?>" href="<?php echo site_url('pages/leaderboard');?>">Leader board</a></li>
+				<li><a class="<?php echo ($selected == 'forums')?'selected':''; ?>" href="<?php echo site_url('pages/forums');?>">Forums</a></li>
 				<li><a class="connect" href="">Log In</a></li>
 			</ul>
 		</div>

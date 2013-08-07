@@ -62,7 +62,7 @@ a{
 }
 
 .menu .menuItems ul li{
-	width: 14.28%;
+	min-width: 14.28%;
 	display:block;
 	float: left;
 }
