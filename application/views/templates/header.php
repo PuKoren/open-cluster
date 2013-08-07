@@ -13,7 +13,8 @@
 		<div class="menuItems defaultAlign">
 			<ul>
 				<li><a href=".">This is a Game</a></li>
-				<li><a class="selected" href="">Home</a></li>
+				<li><a class="<?php echo ($selected == 'home')?'selected':''; ?>" href="<?php echo site_url();?>">Home</a></li>
+				<li><a class="<?php echo ($selected == 'game')?'selected':''; ?>" href="<?php echo site_url('play');?>">Game</a></li>
 				<li><a class="" href="">How to Play</a></li>
 				<li><a class="" href="">Leader Board</a></li>
 				<li><a class="" href="">Forums</a></li>
