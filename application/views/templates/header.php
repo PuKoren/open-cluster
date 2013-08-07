@@ -24,3 +24,4 @@
 	<div class="title defaultAlign">
 		<span id="date" class="left">MON AUG 07 2113</span><span id="time" class="right">11:46</span>
 	</div>
+	<div class="container defaultAlign">
