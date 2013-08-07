@@ -2,22 +2,7 @@
 
 class Pages extends CI_Controller {
 
-	/**
-	 * Index Page for this controller.
-	 *
-	 * Maps to the following URL
-	 * 		http://example.com/index.php/pages
-	 *	- or -  
-	 * 		http://example.com/index.php/pages/home
-	 *	- or -
-	 * Since this controller is set as the default controller in 
-	 * config/routes.php, it's displayed at http://example.com/
-	 *
-	 * So any other public methods not prefixed with an underscore will
-	 * map to /index.php/index/<method_name>
-	 * @see http://codeigniter.com/user_guide/general/urls.html
-	 */
-	public function view($page = 'home')
+	public function _remap($page = 'home')
 	{
 		if(!file_exists('application/views/pages/'.$page.'.php')){
 			show_404();
@@ -25,7 +10,7 @@ class Pages extends CI_Controller {
 
 		$data['title'] = ucfirst($page);
 		$data['selected'] = lcfirst($page);
-		
+
 		$this->load->view('templates/header', $data);
 		$this->load->view('pages/'.$page);
 		$this->load->view('templates/footer');
