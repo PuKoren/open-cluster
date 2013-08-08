@@ -27,7 +27,7 @@
 	</p>
 
 	<div class="registerButton">
-		<a href="<?php site_url('register');?>">Create my Account and play now !</a>
+		<a href="<?php site_url('register');?>">Create my Account and play now!</a>
 	</div>
 
 	<div class="thumbContainer">
