@@ -1,7 +1,7 @@
 html{
 	background-color:black;
-	background-image: url(../resources/img/backgrounds/ngc_2818.jpg);
-	background-position: center top;
+	background-image: url(../resources/img/backgrounds/milky_way.jpg);
+	background-position: right top;
 	background-repeat: no-repeat;
 }
 
@@ -134,7 +134,7 @@ a:hover{
 }
 
 .title{
-	color: #eaeaea;
+	color: white;
 	text-transform: uppercase;
 	font-size: 50px;
 

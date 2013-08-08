@@ -19,7 +19,7 @@
 		Purple Space (tutorial): HiPanda1 (deviantART)<br/>
 		Planet (home, forum): N4u2k (deviantART)<br/>
 		Black Hole (home, thumbnails): NASA (wikimedia)<br/>
-		Nebula NGC 2818 (background, every page): NASA, ESA, and the Hubble Heritage Team (STScI/AURA) (wikimedia)<br/>
+		Milky Way Galagtic Center (background, every page): NASA/JPL-Caltech (wikimedia)<br/>
 		BrainCloud (home, illustration): David Revoy / Blender Foundation (wikimedia)
 	</p>
 </div>
