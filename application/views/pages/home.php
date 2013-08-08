@@ -35,25 +35,26 @@
 			<h1 class="textCenter">Truly Free</h1>
 			<img src="<?php echo site_url('resources/img/thumbs/planet_explosion.jpg')?>"/>
 			<p>
-				My money's in that office, right? If she start giving me some bullshit about it ain't there, 
-				and we got to go someplace else and get it, I'm gonna shoot you in the head then and there.
+				Game is truly free, unlike others. We do not bother you with ads, and we don't ask you for any money.
+				You don't trust us ?
 			</p>
+			<a href="">See why and how we do this</a>
 		</div>
 		<div class="thumb">
 			<h1 class="textCenter">4X Game</h1>
 			<img src="<?php echo site_url('resources/img/thumbs/black_hole.jpg')?>"/>
 			<p>
-				My money's in that office, right? If she start giving me some bullshit about it ain't there, 
-				and we got to go someplace else and get it, I'm gonna shoot you in the head then and there.
+				eXplore, eXpand, eXploit, and eXterminate. This resumes the game briefly. But you will find a lot more inside.
 			</p>
+			<a href="">See the game features</a>
 		</div>
 		<div class="thumb">
 			<h1 class="textCenter">MULTIPLAYER</h1>
 			<img src="<?php echo site_url('resources/img/thumbs/planet_boreal.jpg')?>"/>
 			<p>
-				My money's in that office, right? If she start giving me some bullshit about it ain't there, 
-				and we got to go someplace else and get it, I'm gonna shoot you in the head then and there.
+				War with other players, ally with them, trade with them or just use them in your goal of universe domination.
 			</p>
+			<a href="">Learn more about it</a>
 		</div>
 	</div>
 </div>

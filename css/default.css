@@ -13,6 +13,12 @@ body{
 a{
 	text-decoration: none;
 	color: inherit;
+	transition: 500ms linear 0s;
+}
+
+a:hover{
+	transition: 500ms linear 0s;
+	text-shadow: -1px 1px 8px #349bd1;
 }
 
 .center{
@@ -201,8 +207,14 @@ a{
 }
 
 .thumbContainer .thumb p{
-	margin:0px 25px 0px 25px;
+	margin: auto;
+	max-width: 250px;
 	text-align: justify;
+	padding-bottom: 10px;
+}
+
+.thumbContainer .thumb a{
+	color: #349bd1;
 }
 
 .displayReset{
