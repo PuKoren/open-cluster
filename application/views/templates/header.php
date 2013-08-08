@@ -14,6 +14,7 @@
 			<ul>
 				<li><a href="<?php echo site_url();?>">This is a Game</a></li>
 				<li><a class="<?php echo ($selected == 'home')?'selected':''; ?>" href="<?php echo site_url();?>">Home</a></li>
+				<li><a class="<?php echo ($selected == 'more')?'selected':''; ?>" href="<?php echo site_url('pages/more');?>">Learn More</a></li>
 				<li><a class="<?php echo ($selected == 'game')?'selected':''; ?>" href="<?php echo site_url('play');?>">Commander</a></li>
 				<li><a class="<?php echo ($selected == 'tutorial')?'selected':''; ?>" href="<?php echo site_url('pages/tutorial');?>">How to play</a></li>
 				<li><a class="<?php echo ($selected == 'leaderboard')?'selected':''; ?>" href="<?php echo site_url('pages/leaderboard');?>">Leader board</a></li>

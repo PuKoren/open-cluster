@@ -1,4 +1,4 @@
 <img class="header" src="<?php echo site_url('resources/img/banners/planet.png');?>"></img>
 <div class="content">
-	<h1>How to Play </h1>
+	<h1>I can do that</h1>
 </div>
