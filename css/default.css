@@ -1,7 +1,8 @@
 html{
-	background-color:#050505;
-	background-image: url(../resources/img/backgrounds/bg_dusty.jpg);
-	background-repeat:no-repeat;
+	background-color:black;
+	background-image: url(../resources/img/backgrounds/ngc_2818.jpg);
+	background-position: center top;
+	background-repeat: no-repeat;
 }
 
 body{
