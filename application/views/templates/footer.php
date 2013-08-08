@@ -1,3 +1,4 @@
+		</div>
 	</div>
 	<div class="footer">
 		Copyright (c) <a href="http://www.pukogames.com">Pukogames</a> 2013.
