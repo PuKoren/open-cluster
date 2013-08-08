@@ -11,12 +11,7 @@ function updateTime(){
     $('#time').html(h + ':' + m);
 };
 
-function fitTextInit(){
-	$(".title").fitText(1.1, {minFontSize: '20px', maxFontSize: '50px'});
-};
-
 function dateTimeInit(){
-	fitTextInit();
     updateTime();
     setTimeout(updateTime, 10000);
 }

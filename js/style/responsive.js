@@ -18,4 +18,6 @@ function responsiveInit(){
             }
         }
     }).resize();
+
+    $(".title").fitText(1.1, {minFontSize: '20px', maxFontSize: '50px'});
 }
