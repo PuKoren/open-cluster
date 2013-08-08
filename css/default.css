@@ -1,6 +1,6 @@
 html{
 	background-color:#050505;
-	background-image: url(../resources/img/bg_dusty.jpg);
+	background-image: url(../resources/img/backgrounds/bg_dusty.jpg);
 	background-repeat:no-repeat;
 }
 
@@ -52,7 +52,7 @@ a{
 	font-size: 17px;
 
 	background: rgba(0,0,0,0.4);
-	height: 110px;
+	min-height: 110px;
 	border-bottom: 1px solid #333;
 }
 
@@ -171,15 +171,24 @@ a{
 	border: 1px solid #BBB;
 }
 
+.container .registerButton{
+	text-align: center;
+	font-size: 30px;
+	text-transform: uppercase;
+	color: #eaeaea;
+
+	background-color: #2b87b5;
+	padding: 25px;
+}
+
 .thumbContainer{
+	margin-top:50px;
 	display: table;
 	width: 100%;
 }
 
 .thumbContainer .thumb{
 	display: table-cell;
-	margin: auto;
-	max-width: 100px;
 	text-align: center;
 	padding-bottom: 25px;
 }
@@ -193,4 +202,8 @@ a{
 .thumbContainer .thumb p{
 	margin:0px 25px 0px 25px;
 	text-align: justify;
+}
+
+.displayReset{
+	display: block !important;
 }
