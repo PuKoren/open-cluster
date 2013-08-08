@@ -20,6 +20,7 @@
 		Planet (home, forum): N4u2k (deviantART)<br/>
 		Black Hole (home, thumbnails): NASA (wikimedia)<br/>
 		Milky Way Galagtic Center (background, every page): NASA/JPL-Caltech (wikimedia)<br/>
-		BrainCloud (home, illustration): David Revoy / Blender Foundation (wikimedia)
+		BrainCloud (home, illustration): David Revoy / Blender Foundation (wikimedia)<br/>
+		Nasa registration (register): AGeekMom (flickr)<br/>
 	</p>
 </div>
