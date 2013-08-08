@@ -177,6 +177,7 @@ a{
 	text-transform: uppercase;
 	color: #eaeaea;
 
+	display: block;
 	background-color: #2b87b5;
 	padding: 25px;
 }

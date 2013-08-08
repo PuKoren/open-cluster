@@ -26,9 +26,9 @@
 		nigga Winston or anybody else is in there, you the first motherfucker to get shot. You understand? 
 	</p>
 
-	<div class="registerButton">
-		<a href="<?php site_url('register');?>">Create my Account and play now!</a>
-	</div>
+	<a href="<?php echo site_url('register');?>">
+		<span class="registerButton">Create my Account and play now!</span>
+	</a>
 
 	<div class="thumbContainer">
 		<div class="thumb">
