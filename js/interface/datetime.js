@@ -7,11 +7,15 @@ function updateTime(){
 	if (h<10) {h = "0" + h}
 	if (m<10) {m = "0" + m}
 
-	$('#date').html(date.toDateString());
-    $('#time').html(h + ':' + m);
+	jQueryObjects.date.html(date.toDateString());
+    jQueryObjects.time.html(h + ':' + m);
 };
 
+var jQueryObjects = {};
+
 function dateTimeInit(){
+	jQueryObjects.date = $('#date');
+	jQueryObjects.time = $('#time');
     updateTime();
-    setTimeout(updateTime, 10000);
+    setInterval(updateTime, 10000);
 }
