@@ -9,23 +9,22 @@
 	<script type="text/javascript" src="<?php echo site_url('js/jquery.fittext.js');?>"></script>
 </head>
 <body>
-	<div id="wrap">
-		<div class="menu">
-			<div class="menuItems defaultAlign">
-				<ul>
-					<li><a href="<?php echo site_url();?>">This is a Game</a></li>
-					<li><a class="<?php echo ($selected == 'home')?'selected':''; ?>" href="<?php echo site_url();?>">Home</a></li>
-					<li><a class="<?php echo ($selected == 'more')?'selected':''; ?>" href="<?php echo site_url('pages/more');?>">Learn More</a></li>
-					<!--<li><a class="<?php echo ($selected == 'game')?'selected':''; ?>" href="<?php echo site_url('play');?>">Commander</a></li>-->
-					<li><a class="<?php echo ($selected == 'tutorial')?'selected':''; ?>" href="<?php echo site_url('pages/tutorial');?>">How to play</a></li>
-					<li><a class="<?php echo ($selected == 'leaderboard')?'selected':''; ?>" href="<?php echo site_url('pages/leaderboard');?>">Leader board</a></li>
-					<li><a class="<?php echo ($selected == 'forums')?'selected':''; ?>" href="<?php echo site_url('pages/forums');?>">Forums</a></li>
-					<li><a class="<?php echo ($selected == 'about')?'selected':''; ?>" href="<?php echo site_url('pages/about');?>">About</a></li>
-					<li><a class="connect" href="">Log In</a></li>
-				</ul>
-			</div>
+	<div class="menu">
+		<div class="menuItems defaultAlign">
+			<ul>
+				<li><a href="<?php echo site_url();?>">This is a Game</a></li>
+				<li><a class="<?php echo ($selected == 'home')?'selected':''; ?>" href="<?php echo site_url();?>">Home</a></li>
+				<li><a class="<?php echo ($selected == 'more')?'selected':''; ?>" href="<?php echo site_url('pages/more');?>">Learn More</a></li>
+				<!--<li><a class="<?php echo ($selected == 'game')?'selected':''; ?>" href="<?php echo site_url('play');?>">Commander</a></li>-->
+				<li><a class="<?php echo ($selected == 'tutorial')?'selected':''; ?>" href="<?php echo site_url('pages/tutorial');?>">How to play</a></li>
+				<li><a class="<?php echo ($selected == 'leaderboard')?'selected':''; ?>" href="<?php echo site_url('pages/leaderboard');?>">Leader board</a></li>
+				<li><a class="<?php echo ($selected == 'forums')?'selected':''; ?>" href="<?php echo site_url('pages/forums');?>">Forums</a></li>
+				<li><a class="<?php echo ($selected == 'about')?'selected':''; ?>" href="<?php echo site_url('pages/about');?>">About</a></li>
+				<li><a class="connect" href="">Log In</a></li>
+			</ul>
 		</div>
-		<div class="title defaultAlign">
-			<span id="date" class="left">MON AUG 07 2113</span><span id="time" class="right">11:46</span>
-		</div>
-		<div class="container defaultAlign">
+	</div>
+	<div class="title defaultAlign">
+		<span id="date" class="left">MON AUG 07 2113</span><span id="time" class="right">11:46</span>
+	</div>
+	<div class="container defaultAlign">
