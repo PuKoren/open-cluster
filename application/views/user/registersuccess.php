@@ -10,7 +10,7 @@
 		New messages and requests will come here too, so be sure to visit it regulary.
 	</p>
 	<p>
-		<a class="center" href="<?php echo site_url('play');?>">Hey, I'm not a noob. Take me to the command room.</a>
+		<a class="left" href="<?php echo site_url('play');?>">Hey, I'm not a noob. Take me to the command room.</a>
 		<a class="right" href="<?php echo site_url('pages/tutorial');?>">Access the tutorial now.</a>
 	</p>
 </div>
