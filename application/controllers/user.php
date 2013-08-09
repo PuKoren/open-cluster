@@ -91,7 +91,8 @@ class User extends CI_Controller {
 		}
 		else
 		{
-			if($this->ion_auth->login($this->input->post('email'), $this->input->post('password'), $this->input->post('remember'))){
+			$remember = ($this->input->post('remember'))?true : false;
+			if($this->ion_auth->login($this->input->post('email'), $this->input->post('password'), $remember)){
 				redirect('play', 'refresh');
 			}else{
 				$this->setFormErrorMessages();
