@@ -24,6 +24,31 @@ a:hover{
 /* checkboxes */
 input[type=checkbox].css-checkbox { position: absolute;  overflow: hidden;  clip: rect(0 0 0 0);  height:1px;  width:1px;  margin:-1px;  padding:0; border:0; }  input[type=checkbox].css-checkbox + label.css-label { padding-left:20px; height:17px;  display:inline-block; line-height:17px; background-repeat:no-repeat; background-position: 0 0; font-size:15px; vertical-align:middle; cursor:pointer; }  input[type=checkbox].css-checkbox:checked + label.css-label { background-position: 0 -17px; }  .css-label{ background-image:url(../resources/img/forms/elegant.png); }
 
+
+.blue{
+	background-color: #2b87b5 !important;
+}
+
+.red{
+	background-color: #ce3352 !important;
+}
+
+.block{
+	display: block;
+}
+
+.inline{
+	display: inline;
+}
+
+.table{
+	display: table;
+}
+
+.tablecell{
+	display: table-cell;
+}
+
 .center{
 	margin: auto;
 }
@@ -179,25 +204,23 @@ input[type=checkbox].css-checkbox { position: absolute;  overflow: hidden;  clip
 	border: 1px solid #BBB;
 }
 
-.container .registerButton{
+.container .button{
 	text-align: center;
 	font-size: 30px;
 	text-transform: uppercase;
 	color: #eaeaea;
 
-	display: block;
 	background-color: #2b87b5;
 	padding: 25px;
 }
 
-
-.container .registerButton:hover {
+.container .button:hover {
     background: #25749b;
     cursor: pointer; 
     color:#eee;
 }
 
-.container .registerButton:active {
+.container .button:active {
     background: #206487;
     box-shadow: inset 0 0 1px 1px #25749b;
 }

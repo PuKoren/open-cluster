@@ -8,6 +8,10 @@ class User extends CI_Controller {
 		$this->data['selected'] = "";
 
 		$this->load->library('ion_auth');
+		if ($this->ion_auth->logged_in())
+		{
+			$data['logged'] = true;
+		}
 
 		$this->load->library('form_validation');
 		$this->load->helper(array('form', 'url'));
