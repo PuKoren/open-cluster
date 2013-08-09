@@ -10,6 +10,9 @@
 	<?php echo form_open('user/action/login'); ?>
 		<input type="text" name="email" placeholder="email" value="<?php echo set_value('email');?>"/>
 		<input type="password" name="password" placeholder="password" value="<?php echo set_value('password');?>"/>
+		<div id="centerCheckbox" class="center">
+			<input type="checkbox" name="remember" id="rememberBox" class="css-checkbox" /><label for="rememberBox" name="remember" class="css-label">Do not ask me to log in each time</label>
+		</div>
 		<input type="submit" value="Login"/>
 	</form>
 	<div class="notice textCenter">
