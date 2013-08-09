@@ -8,13 +8,13 @@
 	<div class="errorList">
 		<?php echo validation_errors(); ?>
 	</div>
-	<?php echo form_open('register'); ?>
+	<?php echo form_open('user/action/register'); ?>
 		<input type="text" name="username" placeholder="username" value="<?php echo set_value('username');?>"/>
 		<input type="text" name="email" placeholder="email" value="<?php echo set_value('email');?>"/>
 		<input type="password" name="password" placeholder="password" value="<?php echo set_value('password');?>"/>
 		<input type="submit" value="Register"/>
 	</form>
 	<div class="notice textCenter">
-		You already have an account ? <a href="<?php echo site_url('login');?>">Proceed to log in</a>
+		You already have an account ? <a href="<?php echo site_url('user/action/login');?>">Proceed to log in</a>
 	</div>
 </div>

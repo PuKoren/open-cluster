@@ -20,7 +20,7 @@
 				<li><a class="<?php echo ($selected == 'leaderboard')?'selected':''; ?>" href="<?php echo site_url('pages/leaderboard');?>">Leader board</a></li>
 				<li><a class="<?php echo ($selected == 'forums')?'selected':''; ?>" href="<?php echo site_url('pages/forums');?>">Forums</a></li>
 				<li><a class="<?php echo ($selected == 'about')?'selected':''; ?>" href="<?php echo site_url('pages/about');?>">About</a></li>
-				<li><a class="connect" href="">Log In</a></li>
+				<li><a class="connect" href="<?php echo site_url('user/action/login');?>">Log In</a></li>
 			</ul>
 		</div>
 	</div>
