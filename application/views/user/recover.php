@@ -5,9 +5,9 @@
 		Hello Sir. Please enter the mail address where we can send you your new credentials for the next operations.
 	</p>
 	<div class="errorList">
-		<?php echo validation_errors(); ?>
+		<?php echo $message; ?>
 	</div>
-	<?php echo form_open('user/action/recover'); ?>
+	<?php echo form_open('user/recover'); ?>
 		<input type="text" name="email" placeholder="email" value="<?php echo set_value('email');?>"/>
 		<input type="submit" value="Recover"/>
 	</form>

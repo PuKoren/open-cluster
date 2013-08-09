@@ -5,9 +5,9 @@
 		Hello Sir. I'm sorry to ask you for your credentials, but we can't be too cautious. We already had attempts spy on us, so won't make any exception, even for you.
 	</p>
 	<div class="errorList">
-		<?php echo validation_errors(); ?>
+		<?php echo $message; ?>
 	</div>
-	<?php echo form_open('user/action/login'); ?>
+	<?php echo form_open('user/login'); ?>
 		<input type="text" name="email" placeholder="email" value="<?php echo set_value('email');?>"/>
 		<input type="password" name="password" placeholder="password" value="<?php echo set_value('password');?>"/>
 		<div id="centerCheckbox" class="center">
@@ -16,6 +16,6 @@
 		<input type="submit" value="Login"/>
 	</form>
 	<div class="notice textCenter">
-		You lost your password ? <a href="<?php echo site_url('user/action/recover');?>">Proceed to recovery</a>
+		You have no account or you lost your password  ?<br/><a href="<?php echo site_url('user/register');?>">Proceed to registration</a> | <a href="<?php echo site_url('user/recover');?>">Proceed to recovery</a>
 	</div>
 </div>

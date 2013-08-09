@@ -8,6 +8,13 @@ class Pages extends CI_Controller {
 			show_404();
 		}
 
+		$this->load->library('ion_auth');
+		if ($this->ion_auth->logged_in())
+		{
+			$data['logged'] = true;
+		}
+
+
 		$data['title'] = ucfirst($page);
 		$data['selected'] = lcfirst($page);
 

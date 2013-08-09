@@ -17,7 +17,7 @@
 		get shot. You understand?
 	</p>
 
-	<a href="<?php echo site_url('user/action/register');?>">
+	<a href="<?php echo site_url('user/register');?>">
 		<span class="registerButton">Create my Account and play now!</span>
 	</a>
 
