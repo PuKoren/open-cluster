@@ -1,0 +1,117 @@
+Galaxie divisée en 8 zones en triangle qui forment un cercle
+Dans chaque zone habitable au centre une planète désignée comme capitale, a autorité sur les planètes de la zone
+Au centre de la galaxie, une planète a autorité sur les capitales
+
+Chaque planète capitale touche une part sur tous les achats effectués dans la zone
+La planète centrale touche une part sur toutes les parts obtenues par les capitales
+Au départ les 8 capitales et la responsable sont controlées par le serveur, avec les taxes à 0%
+
+Chaque zone dispose de maximum 1000 systèmes solaires générés aléatoirement en position et contenant des ressources aléatoires (mais équilibrées)
+Le joueur au spawn est placé sur une planète dans un système solaire vide dans la zone à équilibrer (voir plus bas)
+
+Batiments: 
+  Command Room - Permet de voir les expéditions en cours, le status de la planète etc.
+  Scanner - Permet de scanner les planètes et les champs d'astéroides aux alentours. Les infos apparaissent alors sur la map.
+  Marché - Peut ensuite mettre en vente des objets vaisseaux et en acheter. Ils sont alors livrés/emportés par la planète mère et mis sur le marché global.
+  Hangar - Permet de garer des vaisseaux et d'en recevoir d'autres joueurs. Sécurité paramètrable.
+  Usine - Permet de construire les vaisseaux / armes / défenses.
+  Laboratoire - Permet de chercher des améliorations pour les bâtiments.
+  Bibliothèque - Permet d'entrainer ses skills et d'en apprendre de nouveaux. Chaque skill necessite un skillbook achetable.
+  
+Un vaisseau necessite des ressources pour être construit, ainsi qu'une recette de fabrication et à un taux de succès. Le joueur peut acheter/mettre en vente son vaisseau sur le marché global.
+Un vaisseau possède des sockets pour se défendre/attaquer/stocker.
+
+Le joueur peut mettre en vente des objets dans son propre marché, qui n'est pas soumis aux frais de gestions de la mise en vente par le marché global.
+Pour acheter dans ces marchés privés les joueurs doivent aller parquer un vaisseau.
+
+Resources:
+  Gallesium - Commun
+  Aronine - Commun
+  Solidium - Commun
+  8 ressources de base propres à chaque zone
+  
+  Generimese - Moyen
+  Kelium - Moyen
+  Nanonitrate - Moyen
+
+  Minium - Rare
+  Belsate - Rare
+
+Alliances:
+  Un joueur peut monter une alliance et recruter n'importe quel autre joueur.
+  Une alliance doit avoir une planète en guise de base.
+  L'alliance peut acheter des skills qui profitent à tous les membres, contre des apports hebdomadaires en matériaux/crédits
+  Skills:
+    Attaque+ Defense+ Vitesse+ Récolte+ Recherche+
+
+Récolte:
+  Pour récolter des ressources les joueurs doivent construire un vaisseau extracteur et l'envoyer sur une planète interessante ou un champ d'astéroides.
+  Ils reviennent quand ils sont plein ou qu'ils ont atteint une somme définie par le joueur.
+  Les champs d'astéroides contiennent les matières moyennes et rares, mais ils ont une quantité limitée et disparaissent une fois vidés. Ils réapparaissent aléatoirement.
+
+Expedition:
+  Envoyer son vaisseau sur une planète pour chercher des trésors. Peut trouver des reliques, recettes, skillbooks, matériaux rares, crédits, etc.
+
+Crafting:
+  Crafts de vaisseaux, armes, armures, cargos avec les recettes trouvées et les matériaux disponibles. Crafts spécifiques à certaines zones necessitant des ressources spécifiques aux zones
+
+Combat:
+  Le joueur peut placer ses vaisseaux en patrouille autour de n'importe quel objet, si un joueur ennemi entre dans le périmètre de patrouille, un combat se déclanche.
+  Régulièrement, des vaisseaux aliens peuvent apparaitre à certains endroits et les joueurs peuvent les détruire pour obtenir des récompenses, recettes, crédits, skillbook, matériaux d'autres zones etc.
+  Les vaisseaux aliens peuvent attaquer les bases et piller des ressources dans l'inventaire
+  Les joueurs peuvent attaquer les bases et piller les joueurs qui sont dans des zones hostiles envers eux ou dans des alliances ennemies
+  
+Politique:
+  Chaque habitant possède 1 vote pour élire le représentant de la zone qui la contrôlera.
+  Tout le monde peut s'inscrire sur la liste éléctorale et présenter son programme
+  
+Sièges:
+  Possible de prendre de force le contrôle de la zone tous les dimanches lors d'un siège de la planète, il faut avoir un vaisseau capitaine et détruire tous les autres assaillants. Si un seul vaisseau capitaine survit à la fin de la bataille, il obtient la planète. Sinon le précédent élu reprend sa place.
+  Possible de prendre de force le contrôle du centre de la zone tous les samedis lors d'un siège de la planète mère. Mêmes règles.
+  Une alliance doit s'inscrire à un siège pour prendre part
+  Tout le monde peut participer aux sièges et choisir quel camp défendre: celui en place ou une alliance inscrite en attaque
+  Celui en place dispose d'une armée de bots en plus qu'il peut upgrader pendant qu'il est au poste
+  Un vaisseau spécial ne peut pas être envoyé après 1h de siège mais les renforts peuvent
+
+Avantages de contrôler une zone:
+  L'élu fixe le taux de prélèvement sur les transactions qui sera appliqué dans la zone (maximum 21%)
+  L'élu peut prendre dans la caisse pour ses affaires perso
+  Peut upgrader les differents éléments de la zone et définir la politique de celle ci
+    Hostile: Les habitants des autres zones ne sont pas les bienvenus et il est possible pour tout le monde de les attaquer
+    Neutre: Les habitants des autres zones sont tolérés
+  Améliorations des skills de zone: (sont remis à zéro tous les dimanches, chaque skill réduit le taux de prélèvement de 5%. Il faut minimum 5% pour activer un skill)
+    Taux d'apparition des champs d'astéroides
+    Réduction des temps de recherche et d'apprentissage de skills
+    Buffs pour les habitants de la zone (attaque, défense, récolte)
+
+Avantages à contrôler la zone principale:
+  Fixe le taux de prélèvement sur les zones (max 25%)
+  Active un skill au choix pour tous les joueurs:
+    Combat:
+      Augmentation de l'attaque et de la défense de tous les vaisseaux
+    Commerce:
+      Réductions des frais liés au commerce global et amélioration des récoltes
+    Passif:
+      Rien
+    Neutre:
+      Augmentation de la vitesse des vaisseaux
+    Tyranie:
+      Augmentation de 10% des taux de prélèvement des zones (cumulatif)
+
+Zone 9: (zone circulaire autour des 8 zones habitées)
+  Zone où tout le monde est considéré comme un ennemi sauf membres d'une même alliance
+  Fort taux d'aliens
+  Fort taux de champs d'astéroides dont "nombreux" rares et les 8 ressources de bases sont présentes
+  Probabilité élevée de trésors sur les planètes, recettes de vaisseaux des anciens, skillbooks des anciens
+  Seulement 80 systèmes solaires
+  
+Equilibrage:
+  Pour les zones en difficulté:
+    On améliore fait poper de nouveaux joueurs dans cette zone et le taux de rencontre de vaisseaux aliens des joueurs des autres zones augmentent sur ce territoire.
+    Les ressources rapportent moins pour les joueurs des autres zones
+    
+Discussions:
+  Les chefs de zones peuvent parler à tous sur le chan local
+  Les joueurs peuvent discuter à tous sur chaque zone avec un délai de 10 sec entre chaque envoi
+  Les joueurs peuvent s'envoyer des mp et des mails
+  Les joueurs peuvent parler à tous sur une planète

@@ -2,11 +2,10 @@
 <div class="content">
 	<h1>Welcome home, commander</h1>
 	<ul class="commandMenu">
-		<li>Buildings</li>
+		<li>Base overview</li>
 		<li>Spaceships</li>
-		<li>Resources</li>
 		<li>Missions</li>
-		<li>Galaxy</li>
+		<li>Galaxy viewer</li>
 		<li>Alliance</li>
 	</ul>
 	<ul class="commandResources">
@@ -37,10 +36,8 @@
 	</ul>
 
 	<ul class="commandResearch">
-		<li>Buildings</li>
-		<li>Ship parts</li>
+		<li>Buildings upgrades</li>
+		<li>Skills</li>
 		<li>Ship upgrades</li>
-		<li>Market</li>
-		<li>Politics</li>
 	</ul>
 </div>
