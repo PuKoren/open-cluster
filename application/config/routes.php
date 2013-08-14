@@ -40,6 +40,7 @@
 
 $route['default_controller'] = "pages/home";
 $route['404_override'] = '';
+$route['game'] = 'game/dashboard';
 
 
 /* End of file routes.php */

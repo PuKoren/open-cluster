@@ -23,7 +23,7 @@
 		<div class="button">Create my Account and play now!</div>
 	</a>
 	<?php else:?>
-	<a href="<?php echo site_url('play');?>">
+	<a href="<?php echo site_url('game');?>">
 		<div class="button">Go back to the game!</div>
 	</a>
 	<?php endif;?>

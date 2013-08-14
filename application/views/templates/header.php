@@ -17,7 +17,7 @@
 				<?php if(empty($logged)):?>
 					<li><a class="<?php echo ($selected == 'more')?'selected':''; ?>" href="<?php echo site_url('pages/more');?>">Learn More</a></li>
 				<?php else:?>
-					<li><a class="<?php echo ($selected == 'game')?'selected':''; ?>" href="<?php echo site_url('play');?>">Commander</a></li>
+					<li><a class="<?php echo ($selected == 'game')?'selected':''; ?>" href="<?php echo site_url('game');?>">Commander</a></li>
 				<?php endif;?>
 				<li><a class="<?php echo ($selected == 'tutorial')?'selected':''; ?>" href="<?php echo site_url('pages/tutorial');?>">How to play</a></li>
 				<li><a class="<?php echo ($selected == 'leaderboard')?'selected':''; ?>" href="<?php echo site_url('pages/leaderboard');?>">Leader board</a></li>

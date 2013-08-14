@@ -1,6 +1,6 @@
 <div class="container defaultAlign">
 	<img class="header" src="<?php echo site_url('resources/img/banners/galaxy.jpg');?>"></img>
 	<div class="content">
-		<h1>Dashboard</h1>
+		<h1>Laboratory</h1>
 	</div>
 </div>

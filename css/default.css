@@ -331,21 +331,21 @@ input[type=checkbox].css-checkbox { position: absolute;  overflow: hidden;  clip
 	text-align: center;
 	width: 30px;
 	height: 20px;
-	background-color: #2b87b5;
+	background-color: #25749b;
 	padding: 10px 5px 5px 5px;
 	margin-top: 5px;
 	transition: 250ms linear 0s;
 }
 
 .gameMenu .gameMenuItem.selected{
-	width:60px;
-	background-color: #25749b;
+	background-color: #42b4ed;
+		width:60px;
 	margin-left: -30px;
 }
 
 .gameMenu .gameMenuItem:hover{
 	cursor:pointer;
-	background-color: #25749b;
+	background-color: #42b4ed;
 	width:60px;
 	margin-left: -30px;
 	transition: 250ms linear 0s;
