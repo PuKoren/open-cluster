@@ -1,4 +1,3 @@
-	</div>
 	<div class="footer">
 		Copyright (c) <a href="http://www.pukogames.com">Pukogames</a> 2013.
 		Powered by <a href="http://codeigniter.com">CodeIgniter</a> wich says "hey, I did it in {elapsed_time} seconds". <a href="<?php echo site_url('pages/about');?>">About and Credits</a>.

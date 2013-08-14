@@ -1,3 +1,4 @@
+<div class="container defaultAlign">
 <img class="header" src="<?php echo site_url('resources/img/banners/planet.png');?>"></img>
 <div class="content">
 	<img class="right" src="<?php echo site_url('resources/img/thumbs/BrainCloud.png');?>"/>
@@ -17,9 +18,15 @@
 		get shot. You understand?
 	</p>
 
+	<?php if(empty($logged)):?>
 	<a href="<?php echo site_url('user/register');?>">
 		<div class="button">Create my Account and play now!</div>
 	</a>
+	<?php else:?>
+	<a href="<?php echo site_url('play');?>">
+		<div class="button">Go back to the game!</div>
+	</a>
+	<?php endif;?>
 
 	<div class="thumbContainer">
 		<div class="thumb">
@@ -48,4 +55,5 @@
 			<a href="">Learn more about it</a>
 		</div>
 	</div>
+</div>
 </div>

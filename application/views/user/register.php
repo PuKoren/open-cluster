@@ -1,3 +1,4 @@
+<div class="container defaultAlign">
 <img class="header" src="<?php echo site_url('resources/img/banners/registration.jpg');?>"></img>
 <div class="content">
 	<h1>Register</h1>
@@ -17,4 +18,5 @@
 	<div class="notice textCenter">
 		You already have an account ? <a href="<?php echo site_url('user/login');?>">Proceed to log in</a>
 	</div>
+</div>
 </div>

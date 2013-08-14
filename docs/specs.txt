@@ -29,6 +29,8 @@ Resources:
   Aronine - Commun
   Solidium - Commun
   8 ressources de base propres à chaque zone
+	Red Blue Yellow White Black Purple Green Gold Shards
+	
   
   Generimese - Moyen
   Kelium - Moyen
@@ -46,7 +48,7 @@ Alliances:
 
 Récolte:
   Pour récolter des ressources les joueurs doivent construire un vaisseau extracteur et l'envoyer sur une planète interessante ou un champ d'astéroides.
-  Ils reviennent quand ils sont plein ou qu'ils ont atteint une somme définie par le joueur.
+  Ils reviennent quand ils sont pleins ou qu'ils ont atteint une somme définie par le joueur.
   Les champs d'astéroides contiennent les matières moyennes et rares, mais ils ont une quantité limitée et disparaissent une fois vidés. Ils réapparaissent aléatoirement.
 
 Expedition:

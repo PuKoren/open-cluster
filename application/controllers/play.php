@@ -19,6 +19,7 @@ class Play extends CI_Controller {
 	{
 		$this->data['title'] = ucfirst($page);
 		$this->load->view('templates/header', $this->data);
+		$this->load->view('ui/menu', $this->data);
 		$this->load->view('game/'.$page);
 		$this->load->view('templates/footer');
 	}
