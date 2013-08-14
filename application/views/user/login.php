@@ -1,4 +1,3 @@
-<div class="container defaultAlign">
 <img class="header" src="<?php echo site_url('resources/img/banners/planet.png');?>"></img>
 <div class="content">
 	<h1>Login</h1>
@@ -19,5 +18,4 @@
 	<div class="notice textCenter">
 		You have no account or you lost your password  ?<br/><a href="<?php echo site_url('user/register');?>">Proceed to registration</a> | <a href="<?php echo site_url('user/recover');?>">Proceed to recovery</a>
 	</div>
-</div>
 </div>

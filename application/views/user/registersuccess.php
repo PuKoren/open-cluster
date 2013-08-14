@@ -1,4 +1,3 @@
-<div class="container defaultAlign">
 <img class="header" src="<?php echo site_url('resources/img/banners/dashboard.png');?>"></img>
 <div class="content">
 	<h1>Welcome commander !</h1>
@@ -14,5 +13,4 @@
 		<a class="left" href="<?php echo site_url('play');?>">Hey, I'm not a noob. Take me to the command room.</a>
 		<a class="right" href="<?php echo site_url('pages/tutorial');?>">Access the tutorial now.</a>
 	</p>
-</div>
 </div>

@@ -318,10 +318,9 @@ input[type=checkbox].css-checkbox { position: absolute;  overflow: hidden;  clip
 }
 
 .gameMenu{
-	position:fixed;
-	width:100%;
+	position:absolute;
 	margin-top: 150px;
-	margin-left: -46px;
+	margin-left: -47px;
 }
 
 .gameMenu .gameMenuItem{
@@ -339,7 +338,7 @@ input[type=checkbox].css-checkbox { position: absolute;  overflow: hidden;  clip
 
 .gameMenu .gameMenuItem.selected{
 	background-color: #42b4ed;
-		width:60px;
+	width:60px;
 	margin-left: -30px;
 }
 

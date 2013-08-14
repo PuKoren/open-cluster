@@ -1,4 +1,3 @@
-<div class="container defaultAlign">
 <img class="header" src="<?php echo site_url('resources/img/banners/planet.png');?>"></img>
 <div class="content">
 	<img class="right" src="<?php echo site_url('resources/img/thumbs/BrainCloud.png');?>"/>
@@ -55,5 +54,4 @@
 			<a href="">Learn more about it</a>
 		</div>
 	</div>
-</div>
 </div>

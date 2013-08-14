@@ -1,4 +1,3 @@
-<div class="container defaultAlign">
 <img class="header" src="<?php echo site_url('resources/img/banners/purple_space.jpg');?>"></img>
 <div class="content">
 	<h1>How to Play </h1>
@@ -124,5 +123,4 @@
 		&nbsp;&nbsp;Les joueurs peuvent s'envoyer des mp et des mails<br/>
 		&nbsp;&nbsp;Les joueurs peuvent parler à tous sur une planète<br/>
 	</p>
-</div>
 </div>
