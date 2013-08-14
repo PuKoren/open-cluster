@@ -2,6 +2,7 @@
 <div class="content">
 	<h1>Scanner</h1>
 	<div class="scannerContainer">
+		<span class="scannerMinimap right"><span class="marker"></span></span>
 		<div id="scanner" class="scanner">
 			
 		</div>

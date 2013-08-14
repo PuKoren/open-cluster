@@ -1,7 +1,25 @@
 .scannerContainer{
-	margin:auto;
-	width:980px;
-	height:500px;
+	margin-top: 25px;
+	width:975px;
+	height:600px;
+}
+
+.scannerContainer .scannerMinimap{
+	background-image: url(../resources/img/game/scanner/NGC_1232.jpg);
+	width: 192px;
+	height: 120px;
+	background-size: 192px 120px;
+	background-position: right;
+	opacity:.70;
+}
+
+.scannerContainer .scannerMinimap .marker{
+	background-color: #90CA77;
+	width: 90px;
+	height: 60px;
+	position: absolute;
+	opacity: .60;
+	margin: 0px 0px 0px 0px;
 }
 
 .scannerContainer .scanner{
