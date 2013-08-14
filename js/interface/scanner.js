@@ -8,6 +8,9 @@ function move (e){
     inbounds.x = offset.x < 0 && (offset.x * -1) < bounds.w;
     inbounds.y = offset.y < 0 && (offset.y * -1) < bounds.h;
     
+    $minimap.css("margin-top", -offset.y / (elbounds.h/minimapBounds.h));
+    $minimap.css("margin-left", -offset.x / (elbounds.w/minimapBounds.w));
+
     if (movecontinue && inbounds.x && inbounds.y) {
         start.x = offset.x;
         start.y = offset.y;
@@ -44,10 +47,15 @@ function reset (){
     $(this).css('backgroundPosition', '0 0');
 }
 
-var $scanner, elbounds, bounds, origin, start, movecontinue = null;
+var $scanner, $minimap, elbounds, minimapBounds, bounds, origin, start, movecontinue = null;
 
 function scannerInit(){
     $scanner = $(".scannerContainer .scanner");
+    $minimap = $(".scannerContainer .scannerMinimap .marker");
+    $minimap.css("width", 1920/192);
+    $minimap.css("height", 1200/120);
+
+    minimapBounds = {w: 192, h: 120};
     elbounds = {w: parseInt($scanner.width()), h: parseInt($scanner.height())};
 	bounds = {w: 1920 - elbounds.w, h: 1200 - elbounds.h};
 	origin = {x: 0, y: 0};
