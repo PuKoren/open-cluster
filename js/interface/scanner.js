@@ -51,7 +51,7 @@ var $scanner, $minimap, elbounds, bounds, origin, start, movecontinue = null, ba
 
 function scannerInit(){
 
-	backgroundSize = {w: 1600, h: 1504};
+	backgroundSize = {w: 1400, h: 960};
 
 	$container = $(".scannerContainer");
     $scanner = $(".scannerContainer .scanner");
