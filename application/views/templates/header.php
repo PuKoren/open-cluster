@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title><?php echo $title;?> - This is a game</title>
+	<title><?php echo $title;?> - Open Cluster</title>
 	<link rel="stylesheet" type="text/css" href="<?php echo site_url('css/reset-min.css');?>"></link>
 	<link rel="stylesheet" type="text/css" href="<?php echo site_url('css/default.css');?>"></link>
 	<link rel="stylesheet" type="text/css" href="<?php echo site_url('css/scanner.css');?>"></link>
@@ -13,7 +13,7 @@
 	<div class="menu">
 		<div class="menuItems defaultAlign">
 			<ul>
-				<li><a href="<?php echo site_url();?>">This is a Game</a></li>
+				<li><a href="<?php echo site_url();?>">Open Cluster</a></li>
 				<li><a class="<?php echo ($selected == 'home')?'selected':''; ?>" href="<?php echo site_url();?>">Home</a></li>
 				<?php if(empty($logged)):?>
 					<li><a class="<?php echo ($selected == 'more')?'selected':''; ?>" href="<?php echo site_url('pages/more');?>">Learn More</a></li>

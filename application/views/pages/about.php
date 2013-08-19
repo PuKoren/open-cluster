@@ -22,5 +22,6 @@
 		Milky Way Galagtic Center (background, every page): NASA/JPL-Caltech (wikimedia)<br/>
 		BrainCloud (home, illustration): David Revoy / Blender Foundation (wikimedia)<br/>
 		Nasa registration (register): AGeekMom (flickr)<br/>
+		Heart Nebula (scanner): s58y (flickr)<br/>
 	</p>
 </div>

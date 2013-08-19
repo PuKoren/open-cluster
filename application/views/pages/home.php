@@ -1,7 +1,7 @@
 <img class="header" src="<?php echo site_url('resources/img/banners/planet.png');?>"></img>
 <div class="content">
 	<img class="right" src="<?php echo site_url('resources/img/thumbs/BrainCloud.png');?>"/>
-	<h1>This is a game</h1>
+	<h1>Open Cluster</h1>
 
 	<p>
 		Now that there is the Tec-9, a crappy spray gun from South Miami. This gun is advertised 
