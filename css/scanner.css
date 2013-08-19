@@ -2,6 +2,7 @@
 	margin-top: 25px;
 	width:100%;
 	height:600px;
+	overflow: hidden;
 }
 
 .scannerContainer .scannerMinimap{
@@ -14,6 +15,8 @@
 	background-position: center;
 	background-repeat: no-repeat;
 	opacity:.70;
+	position: absolute;
+	right: 15%;
 }
 
 .scannerContainer .scannerMinimap .marker{
@@ -26,8 +29,8 @@
 	background-image: url(../resources/img/game/scanner/heart_nebula.jpg);
 	width:100%;
 	height:100%;
-	background-position: 0 0;
     background-repeat: no-repeat;
+    background-position: center;
     background-color: #181C35;
 }
 
@@ -37,4 +40,15 @@
 
 .scannerContainer .scanner:active{
 	cursor: move;
+}
+
+circle:hover{
+	cursor:pointer;
+	stroke: blue;
+	transition:1s;
+}
+
+circle{
+	stroke: orange;
+	transition:1s;
 }

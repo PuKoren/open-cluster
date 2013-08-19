@@ -1,4 +1,4 @@
-function move (e){
+function move (e, force){
     var inbounds = {x: false, y: false},
         offset = {
             x: start.x - (origin.x - e.clientX), 
@@ -11,7 +11,9 @@ function move (e){
     $minimap.css("margin-top", -offset.y * ($minimap.height() / elbounds.h));
     $minimap.css("margin-left", -offset.x * ($minimap.width() / elbounds.w));
 
-    if (movecontinue && inbounds.x && inbounds.y) {
+    //$zone9.attr('cx', offset.x + $container.width() + 'px');
+
+    if (force || (movecontinue && inbounds.x && inbounds.y)) {
         start.x = offset.x;
         start.y = offset.y;
         
@@ -43,8 +45,13 @@ function handle (e){
 }
 
 function reset (){
+	origin = {x: 0, y: 0};
     start = {x: 0, y: 0};
-    $(this).css('backgroundPosition', '0 0');
+    $(this).css('backgroundPosition', 'center');
+    resetMarker();
+    move({clientY: -(backgroundSize.h - $container.height())/2, clientX: -(backgroundSize.w - $container.width())/2, stopPropagation: function(){}}, true);
+    $zone9.attr('cx', ($container.width())/2 + 'px');
+    $zone9.attr('cy', ($container.height())/2 + 'px');
 }
 
 var $scanner, $minimap, elbounds, bounds, origin, start, movecontinue = null, backgroundSize;
@@ -54,6 +61,7 @@ function scannerInit(){
 	backgroundSize = {w: 1400, h: 960};
 
 	$container = $(".scannerContainer");
+	$zone9 = $("#zone9");
     $scanner = $(".scannerContainer .scanner");
     $minimap = $(".scannerContainer .scannerMinimap .marker");
     $minimap.css("width", $(".scannerContainer .scannerMinimap").width()/(backgroundSize.w/$container.width()));
@@ -65,9 +73,12 @@ function scannerInit(){
 	start = {x: 0, y: 0};
 	movecontinue = false;
 
+    move({clientY: -(backgroundSize.h - $container.height())/2, clientX: -(backgroundSize.w - $container.width())/2, stopPropagation: function(){}}, true);
+    $zone9.attr('cx', ($container.width())/2 + 'px');
+    $zone9.attr('cy', ($container.height())/2 + 'px');
+
     $scanner.bind('mousedown mouseup mouseleave', handle);
     $scanner.bind('dblclick', reset);
-
     jQuery(window).resize(function() {
     	resetMarker();
     });
