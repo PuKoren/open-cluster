@@ -8,8 +8,8 @@ function move (e){
     inbounds.x = offset.x < 0 && (offset.x * -1) < bounds.w;
     inbounds.y = offset.y < 0 && (offset.y * -1) < bounds.h;
     
-    $minimap.css("margin-top", -offset.y / (elbounds.h/minimapBounds.h));
-    $minimap.css("margin-left", -offset.x / (elbounds.w/minimapBounds.w));
+    $minimap.css("margin-top", -offset.y * ($minimap.height() / elbounds.h));
+    $minimap.css("margin-left", -offset.x * ($minimap.width() / elbounds.w));
 
     if (movecontinue && inbounds.x && inbounds.y) {
         start.x = offset.x;
@@ -47,22 +47,35 @@ function reset (){
     $(this).css('backgroundPosition', '0 0');
 }
 
-var $scanner, $minimap, elbounds, minimapBounds, bounds, origin, start, movecontinue = null;
+var $scanner, $minimap, elbounds, bounds, origin, start, movecontinue = null, backgroundSize;
 
 function scannerInit(){
+
+	backgroundSize = {w: 1600, h: 1504};
+
+	$container = $(".scannerContainer");
     $scanner = $(".scannerContainer .scanner");
     $minimap = $(".scannerContainer .scannerMinimap .marker");
-    $minimap.css("width", 1920/192);
-    $minimap.css("height", 1200/120);
+    $minimap.css("width", $(".scannerContainer .scannerMinimap").width()/(backgroundSize.w/$container.width()));
+    $minimap.css("height", $(".scannerContainer .scannerMinimap").height()/(backgroundSize.h/$container.height()));
 
-    minimapBounds = {w: 192, h: 120};
     elbounds = {w: parseInt($scanner.width()), h: parseInt($scanner.height())};
-	bounds = {w: 1920 - elbounds.w, h: 1200 - elbounds.h};
+	bounds = {w: backgroundSize.w - elbounds.w, h: backgroundSize.h - elbounds.h};
 	origin = {x: 0, y: 0};
 	start = {x: 0, y: 0};
 	movecontinue = false;
 
     $scanner.bind('mousedown mouseup mouseleave', handle);
     $scanner.bind('dblclick', reset);
+
+    jQuery(window).resize(function() {
+    	resetMarker();
+    });
 }
 
+function resetMarker(){
+    elbounds = {w: parseInt($scanner.width()), h: parseInt($scanner.height())};
+	bounds = {w: backgroundSize.w - elbounds.w, h: backgroundSize.h - elbounds.h};
+    $minimap.css("width", $(".scannerContainer .scannerMinimap").width()/(backgroundSize.w/$container.width()));
+    $minimap.css("height", $(".scannerContainer .scannerMinimap").height()/(backgroundSize.h/$container.height()));
+}

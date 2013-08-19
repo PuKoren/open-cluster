@@ -46,7 +46,7 @@ class User extends CI_Controller {
 
 		if ($this->ion_auth->logged_in())
 		{
-			redirect('play', 'refresh');
+			redirect('game', 'refresh');
 		}
 		
 		$this->setFormValidationRules('register');
@@ -79,7 +79,7 @@ class User extends CI_Controller {
 
 		if ($this->ion_auth->logged_in())
 		{
-			redirect('play', 'refresh');
+			redirect('game', 'refresh');
 		}
 
 		$this->setFormValidationRules('login');
@@ -93,7 +93,7 @@ class User extends CI_Controller {
 		{
 			$remember = ($this->input->post('remember'))?true : false;
 			if($this->ion_auth->login($this->input->post('email'), $this->input->post('password'), $remember)){
-				redirect('play', 'refresh');
+				redirect('game', 'refresh');
 			}else{
 				$this->setFormErrorMessages();
 				$this->load->view('user/login', $this->data);
@@ -110,7 +110,7 @@ class User extends CI_Controller {
 
 		if ($this->ion_auth->logged_in())
 		{
-			redirect('play', 'refresh');
+			redirect('game', 'refresh');
 		}
 
 		$this->setFormValidationRules('recover');

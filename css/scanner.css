@@ -1,28 +1,29 @@
 .scannerContainer{
 	margin-top: 25px;
-	width:975px;
+	width:100%;
 	height:600px;
 }
 
 .scannerContainer .scannerMinimap{
-	background-image: url(../resources/img/game/scanner/NGC_1232.jpg);
-	width: 192px;
-	height: 120px;
-	background-size: 192px 120px;
-	background-position: right;
+	background-image: url(../resources/img/game/scanner/NGC_5139_2.jpg);
+	width: 15%;
+	height: 15%;
+	max-height: 15%;
+	max-width: 15%;
+	background-size: 100% auto;
+	background-position: center;
+	background-repeat: no-repeat;
 	opacity:.70;
 }
 
 .scannerContainer .scannerMinimap .marker{
 	background-color: #90CA77;
-	width: 90px;
-	height: 60px;
 	position: absolute;
 	opacity: .60;
 }
 
 .scannerContainer .scanner{
-	background-image: url(../resources/img/game/scanner/NGC_1232.jpg);
+	background-image: url(../resources/img/game/scanner/NGC_5139_2.jpg);
 	width:100%;
 	height:100%;
 	background-position: 0 0;
