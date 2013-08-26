@@ -171,7 +171,7 @@ input[type=checkbox].css-checkbox { position: absolute;  overflow: hidden;  clip
 
 .container{
 	background-color: #eaeaea;
-	min-height:500px;
+	min-height:300px;
 	border: 6px solid rgba(234,234,234,0.2);
 	background-clip: padding-box;
 }
@@ -200,8 +200,11 @@ input[type=checkbox].css-checkbox { position: absolute;  overflow: hidden;  clip
 	margin-bottom: 50px;
 }
 
-.container .content img{
+.container .content .right{
 	margin-left: 25px;
+}
+
+.container .content img{
 	border: 1px solid #BBB;
 }
 
