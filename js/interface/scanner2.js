@@ -2,6 +2,33 @@ var $body, $map, $minimap, $marker, $container;
 var mapSize = {w: 1400, h: 960};
 var origin = {x: 0, y: 0};
 var smoothness = {x: 2, y: 2};
+var zoneR = 600;
+var zones = 8;
+
+var rad = Math.PI / 180;
+function sector(cx, cy, r, startAngle, endAngle, params) {
+    var x1 = cx + r * Math.cos(-startAngle * rad),
+    x2 = cx + r * Math.cos(-endAngle * rad),
+    y1 = cy + r * Math.sin(-startAngle * rad),
+    y2 = cy + r * Math.sin(-endAngle * rad);
+
+    return "M" + cx + " " + cy + " L " + x1 + " " + y1 + " A " + r + " " + r + " " + 0 + " " + ((endAngle - startAngle > 180)?1:0) + " " + 0 + " " + x2 + " " + y2 + " z";
+}
+
+function placeSVG(){
+	$map.find('svg').css('width', mapSize.w);
+	$map.find('svg').css('height', mapSize.h);
+
+	$map.find('circle').each(function(index){
+		$(this).attr("cx", mapSize.w/2);
+		$(this).attr("cy", mapSize.h/2);
+	});
+
+	var angleGap = parseFloat(360)/parseFloat(zones);
+	$map.find('.sector').each(function(index){
+		$(this).attr("d", sector(parseFloat(mapSize.w)/2, parseFloat(mapSize.h)/2, zoneR, index * angleGap, (index + 1) * angleGap));
+	});
+}
 
 function resetMarker(){
 	$marker.css('width', $minimap.width() * ($container.width()/mapSize.w));
@@ -51,16 +78,6 @@ function mouseClickHandle(e){
     }
     e.stopPropagation();
     return false;
-}
-
-function placeSVG(){
-	$map.find('svg').css('width', mapSize.w);
-	$map.find('svg').css('height', mapSize.h);
-
-	$map.find('circle').each(function(index){
-		$(this).attr("cx", mapSize.w/2);
-		$(this).attr("cy", mapSize.h/2);
-	});
 }
 
 

@@ -30,6 +30,7 @@
 	opacity:.70;
 	position: absolute;
 	right:0px;
+	z-index: 1;
 }
 
 .scannerContainer .scannerMinimap .marker{
@@ -46,14 +47,42 @@
 	cursor: move;
 }
 
-circle:hover{
-	cursor:pointer;
-	stroke: #008C9E;
-	transition:1s;
+.scannerContainer .scanner #sector9{
+	stroke: #005F6B;
 }
 
-circle{
-	stroke: #005F6B;
-	opacity: 0.5;
-	transition:1s;
+.scannerContainer .scanner .sector{
+	opacity: 0.1;
+	transition: 1s;
+}
+
+.scannerContainer .scanner .sector:hover{
+	opacity: 0.3;
+	transition: 1s;
+	cursor:pointer;
+}
+
+.scannerContainer .scanner #sector1{
+	fill: #BD1550;
+}
+.scannerContainer .scanner #sector2{
+	fill: #E97F02;
+}
+.scannerContainer .scanner #sector3{
+	fill: #F8CA00;
+}
+.scannerContainer .scanner #sector4{
+	fill: #8A9B0F;
+}
+.scannerContainer .scanner #sector5{
+	fill: #61A6AB;
+}
+.scannerContainer .scanner #sector6{
+	fill: black;
+}
+.scannerContainer .scanner #sector7{
+	fill: white;
+}
+.scannerContainer .scanner #sector8{
+	fill: gray;
 }
