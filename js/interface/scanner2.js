@@ -33,6 +33,9 @@ function mouseMoveHandle(e){
 		}
 	}
 
+	$marker.css('margin-left', -parseFloat($map.css("margin-left")) * ($minimap.width() / mapSize.w) + "px");
+	$marker.css('margin-top', -parseFloat($map.css("margin-top")) * ($minimap.height() / mapSize.h) + "px");
+
 	origin.x = e.clientX;
 	origin.y = e.clientY;
 }
